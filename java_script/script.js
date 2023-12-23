@@ -50,3 +50,25 @@ let school = [
     {}
 ]
 
+//stp1= magmo scores ro zakhire kon
+sum = 0;
+
+// stp2= be tedad tol array school[0].students tekrar sho
+for (i = 0; i < school[0].students.length; i++) {
+
+    //stp3= array school[0].students[i] ro ty kon v score har student ro be sum azafe kon
+    sum += school[0].students[i].score
+
+}
+
+//stp4= sum ro chap kon 
+console.log("مجموع نمرات دانش موزان کلاس : " + sum)
+
+// sum ro bar tedad tol array school[0].students taghsim kon 
+Average = sum / school[0].students.length;
+
+// Average score students ro chap kon
+console.log("میانگین نمرات دانش موزان کلاس : " + Average)
+
+
+
