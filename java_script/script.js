@@ -35,7 +35,7 @@ let school = [
             // std 3
             {
                 name: "raheleh",
-                score: 19.5,
+                score: "19.5",
                 codeMali: 9592686562
             },
             // sdt 4
@@ -50,21 +50,32 @@ let school = [
     {}
 ]
 
-//stp1= magmo scores ro zakhire kon
+//stp1= majmo scores ro zakhire kon
 sum = 0;
 
-// stp2= be tedad tol array school[0].students tekrar sho
+// stp2= be tedad tool array school[0].students tekrar sho
 for (i = 0; i < school[0].students.length; i++) {
 
-    //stp3= array school[0].students[i] ro ty kon v score har student ro be sum azafe kon
-    sum += school[0].students[i].score
+    //stp3= array school[0].students[i] ro tey kon va score har student ro be sum azafe kon
+
+    if (typeof (school[0].students[i].score) == "number") {
+
+        if (typeof (sum) != "number") {
+
+            sum = 0
+            sum += school[0].students[i].score
+
+        }
+        else {
+            sum += school[0].students[i].score
+        }
 
 }
 
 //stp4= sum ro chap kon 
 console.log("مجموع نمرات دانش موزان کلاس : " + sum)
 
-// sum ro bar tedad tol array school[0].students taghsim kon 
+// sum ro bar tedad tool array school[0].students taghsim kon 
 Average = sum / school[0].students.length;
 
 // Average score students ro chap kon
