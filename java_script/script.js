@@ -69,7 +69,7 @@ for (i = 0; i < school[0].students.length; i++) {
         else {
             sum += school[0].students[i].score
         }
-
+    }
 }
 
 //stp4= sum ro chap kon 
@@ -81,5 +81,28 @@ Average = sum / school[0].students.length;
 // Average score students ro chap kon
 console.log("میانگین نمرات دانش موزان کلاس : " + Average)
 
+
+// ==================================================================================
+
+//stp1= top score ro dar max zakhire kon
+let max = Number(school[0].students[0].score);
+
+//stp2= name top student class ro dar nameTop zakhire kon
+let nameTop = school[0].students[0].name;
+
+//stp3= tool array ro tey kon
+for (let i = 0; i < school[0].students.length; i++) {
+
+    //stp4= top score va name top student ro peyda va zakhire kon
+    if (max < school[0].students[i].score) {
+        max = school[0].students[i].score
+        nameTop = school[0].students[i].name;
+    }
+
+}
+
+//stp5= top score va name top student ro shap kon
+console.log(nameTop + " : دانش اموز نمره برتر کلاس ")
+console.log("با نمره : " + max)
 
 
