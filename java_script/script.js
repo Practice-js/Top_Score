@@ -101,8 +101,34 @@ for (let i = 0; i < school[0].students.length; i++) {
 
 }
 
-//stp5= top score va name top student ro shap kon
+//stp5= top score va name top student ro chap kon
 console.log(nameTop + " : دانش اموز نمره برتر کلاس ")
 console.log("با نمره : " + max)
+
+
+// ==================================================================================
+
+//stp1= kamtarin score ro dar min zakhire kon
+let min = Number(school[0].students[0].score);
+
+//stp2= name student pashmake class ro dar namePashmak zakhire kon
+let namePashmak = school[0].students[0].name;
+
+//stp3= tool array ro tey kon
+for (let i = 0; i < school[0].students.length; i++) {
+
+    //stp4= kamtarin score va name student pashmak ro peyda va zakhire kon
+    if (min > school[0].students[i].score) {
+        min = school[0].students[i].score
+        namePashmak = school[0].students[i].name;
+    }
+
+}
+
+
+//stp5= kamtarin score va name student pashmak ro chap kon
+console.log(namePashmak + " : دانش اموز نمره پشمک کلاس ")
+console.log("با نمره : " + min)
+
 
 
