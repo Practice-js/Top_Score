@@ -70,6 +70,15 @@ for (i = 0; i < school[0].students.length; i++) {
             sum += school[0].students[i].score
         }
     }
+
+    //stp4= type score string ro be int tabdil kon va be sum ezafe kon
+    else if (typeof (school[0].students[i].score) != "number") {
+
+        x = Number(school[0].students[i].score)
+
+        sum += x
+
+    }
 }
 
 //stp4= sum ro chap kon 
