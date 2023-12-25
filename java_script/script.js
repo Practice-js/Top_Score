@@ -28,7 +28,7 @@ let school = [
             // std 2
             {
                 name: "tahereh",
-                score: 19,
+                score: 15,
                 codeMali: 63948574617
 
             },
@@ -80,6 +80,8 @@ for (i = 0; i < school[0].students.length; i++) {
 
     }
 }
+
+console.log(school[0].info.classNeme + " : مشخصات کلاس")
 
 //stp4= sum ro chap kon 
 console.log("مجموع نمرات دانش موزان کلاس : " + sum)
