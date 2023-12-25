@@ -81,7 +81,9 @@ for (i = 0; i < school[0].students.length; i++) {
     }
 }
 
-console.log(school[0].info.classNeme + " : مشخصات کلاس")
+console.log(school[0].info.classNeme + " ٍمشخصات کلاس ")
+console.log(school[0].info.teacherNeam + " : اسم استاد")
+console.log(school[0].info.totalStudent + " : تعداد دانش اموزان")
 
 //stp4= sum ro chap kon 
 console.log("مجموع نمرات دانش موزان کلاس : " + sum)
